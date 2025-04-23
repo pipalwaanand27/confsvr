@@ -1,11 +1,22 @@
 server:
   port: 8888
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: "file:///E:/confsvr/src/main/resources/config/licensingservice"
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/pipalwaanand27/confsvr
+          searchPaths: licensingservice
+          username: native-cloud-apps
+          password: 0ffended
 
+
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: "file:///E:/confsvr/src/main/resources/config/licensingservice"
