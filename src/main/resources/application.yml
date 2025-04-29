@@ -4,13 +4,9 @@ spring:
   cloud:
     config:
       server:
-        encrypt.enabled: false
         git:
           uri: https://github.com/pipalwaanand27/confsvr
           searchPaths: licensingservice
-          username: native-cloud-apps
-          password: 0ffended
-
 
 #spring:
 #  profiles:
